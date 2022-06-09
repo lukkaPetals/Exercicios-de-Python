@@ -1,0 +1,6 @@
+#-*- coding: utf-8 -*-
+n = int(input('Digite um número para ser verificado'))
+if n % 2 == 0:
+	print('Seu número é par')
+else:
+	print('Seu número é impar')
