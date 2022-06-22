@@ -1,8 +1,10 @@
 import pyautogui
 import time
-for c in range(0, 9):
-    time.sleep(5)
+time.sleep(5)
+for c in range(0, 101):
     f = open("flood.txt", "r")
     for word in f:
         pyautogui.typewrite(word)
-        pyautogui.press("enter")
+        time.sleep(0.5)
+        for d in range(0, 2):
+            pyautogui.press("enter")
